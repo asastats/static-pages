@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}ASA Stats - FAQ page{% endblock %}
+{% block description %}Frequently asked questions about ASA Stats project and ASASTATS token.{% endblock %}
+{% block keywords %}asastats,Algorand,ASA,project,token,questions,answers,features,inquiries,requests{% endblock %}
+{% block content %}
+<div class="row left-align">
+<h1 class="center-align">FAQ</h1>
+   <div class="col s12">
+    <div class="card horizontal white">
+    <div class="card-stacked">
+    <div class="card-content">
+      <p>NOTE: This page is a work in progress.</p>
+    </div>
+    </div>
+    </div>
+    <br>
+   <div class="col s12">
+    <ul class="collection">
+      <li class="collection-item">
+      <p><strong>Is there a project's roadmap available?</strong>
+      <br><br>Yes, pleasue use our GitHub <a href="https://github.com/asastats/docs/blob/main/roadmap.md" target="_blank" rel="noopener" title="ASA Stats roadmap">roadmap document</a>.
+      </li>
+      <li class="collection-item">
+      <p><strong>Why my token price under Tinyman swap subsection differs from some other price information sources?</strong>
+      <br><br>The reason is probably that the address holds a significant amount of that token. ASA Stats shows the real price and value for a token - exactly the value you'd get if you try to sell the full amount with a slippage of 0.0% in the Tinyman app.
+      </li>
+      <li class="collection-item">
+      <p><strong>Why my token icon is not shown?</strong>
+      <br><br>Please add the token icon to the <a href="https://github.com/tinymanorg/asa-list" target="_blank" rel="noopener" title="Tinyman's icons repository">Tinyman's repository</a> and ASA Stats will add it as soon as possible.
+      </li>
+      <li class="collection-item">
+      <p><strong>When the token presale(s) will take place?</strong>
+      <br><br>Everything about the token presale(s) will be organized based on the discussion in the #presale-discussion room in our Discord server and the outcomes of that discussion will be the only relevant in deciding when, if and how. Please <a href="https://discord.gg/Vjx7w7pAC7" target="_blank" rel="noopener" title="Join our Discord server">join our Discord server</a>, read what have been posted since the beginning and join the discussion with your opinions, suggestions, etc.<br>
+      <br>Also, if you find an opinion from the people not willing or not being able to join the discussion, feel free to reach us and point on such opinions or suggestions, and they will be manually added to the room with the original link to it.
+      </li>
+      <li class="collection-item">
+      <p><strong>Why are the totals calculated in ALGO?</strong>
+      <br><br><a href="{% url 'about' %}#goals" title="About page">Great UX</a> implies consistency and ALGO represents the most obvious choice. You may check a value in USD by hovering your mouse over the main header showing the total amount in ALGO.
+      </li>
+      <li class="collection-item">
+      <p><strong>Is there any plan to change the main currency from ALGO to something else?</strong>
+      <br><br>None whatsoever. However, you may switch currency from ALGO to USD and back by clicking the related button on the top-right of the tokens section.
+      </li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
+{% block otherfooter %}<script type="application/ld+json">{% include "jsonld/faq.jsonld" %}</script>{% endblock %}
