@@ -7,8 +7,3 @@ Fork the repo, update the related html page in this directory with the final con
 ## Website link
 
 https://www.asastats.com/faq/
-
-
-## Official discussion and community draft
-
-https://github.com/asastats/static-pages/issues/2
