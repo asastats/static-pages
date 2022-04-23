@@ -1,0 +1,142 @@
+{% extends 'base.html' %}{% load static %}
+{% block title %}ASA Stats - Token metrics page{% endblock %}
+{% block description %}ASA Stats Token (ASASTATS) metrics page - download the ASA Stats Whitepaper and buy ASASTATS on Tinyman.{% endblock %}
+{% block keywords %}asastats,Algorand,ASA,ASASTATS,ASA Stats Token,token,token metrics,tokenomics,DAO,buy,how to buy{% endblock %}
+{% block content %}
+<div class="row left-align">
+<h1 class="center-align">Tokenomics</h1>
+  <div class="row col s12">
+    <div class="col s12">
+      <div class="card horizontal white">
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>Download <a href="/whitepaper.pdf" target="_blank" title="ASA Stats Whitepaper">ASA Stats Whitepaper</a><br>
+            <br>
+            <p>Download ASA Stats Transparency Reports: <a href="/transparency-report-2022-03.pdf" target="_blank" title="Download ASA Stats Transparency Report for March 2022">03/22</a>&nbsp;|&nbsp;<a href="/transparency-report-2022-02.pdf" target="_blank" title="Download ASA Stats Transparency Report for February 2022">02/22</a>&nbsp;|&nbsp;<a href="/transparency-report-2022-01.pdf" target="_blank" title="Download ASA Stats Transparency Report for January 2022">01/22</a>&nbsp;|&nbsp;<a href="/transparency-report-2021-12.pdf" target="_blank" title="Download ASA Stats Transparency Report for December 2021">12/21</a>&nbsp;|&nbsp;<a href="/transparency-report-2021-11.pdf" target="_blank" title="Download ASA Stats Transparency Report for November 2021">11/21</a><br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s12">
+      <div class="card white">
+        <div class="card-content">
+          <span class="card-title">Buy ASA Stats Token</span>
+          <p>You will need to opt-in for ASA Stats Token (ASASTATS; ID 393537671) before purchasing it on Tinyman. You can search by name (ASA Stats Token), code (ASASTATS), or ID (393537671).<br>
+          <br>
+          Current price (Tinyman): {{ price|floatformat:"-6g" }} ASASTATS for 1 ALGO
+          </p><br>
+          <a class="mylight-text" href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=393537671" target="_blank" rel="noopener" title="Buy ASA Stats Token on Tinyman">Tinyman</a>&nbsp;&nbsp;&nbsp;
+          <a class="mylight-text" href="https://app.algodex.com/trade/393537671" target="_blank" rel="noopener" title="Buy ASA Stats Token on Algodex">Algodex</a>&nbsp;&nbsp;&nbsp;
+          <a class="mylight-text" href="https://www.reddit.com/r/asastats/comments/rdcx6s/how_to_buy_asa_stats_token_asastats_393537671/" target="_blank" rel="noopener" title="Visit page How To Buy ASA Stats Token (ASASTATS #393537671)">How To Buy</a>&nbsp;&nbsp;&nbsp;
+          <a class="mylight-text" href="https://about.algodex.com/docs/algodex-trading-guide-mainnet/" target="_blank" rel="noopener" title="Go to Algodex trading guide page">Algodex trading guide</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3>Background</h3>
+  <div class="col s12">
+    <p>The Algorand blockchain has been continuously improved and an increased adoption creates more and more applications.<br>
+    <br>
+    Community members and enthusiasts are in need of a tool that will give them the current value of their accounts.<br>
+    <br>
+    Seasonal and professional traders demand a robust and reliable service that will deliver to them trustworthy information the way they have chosen and triggered by the events and options they have configured.
+     <br>
+    </p>
+    <br>
+  </div>
+  <h3>General information</h3>
+  <div class="col s12">
+    ASA Stats aims to provide a robust and dependable source for the price information of every ASA and the only way to achieve that goal is through continuous research and continuous development.<br>
+    <br>
+    Such an approach is demanding and requires a lot of effort for everyone involved, but also makes a related utility token an interesting asset for both investors and contributors.<br>
+    <br>
+    One of the primary goals and a measure of success for ASA Stats project is establishing of decentralized autonomous organization (DAO) that will take over after the initial phase of the project is successfully finished.<br>
+    <br>
+    <h5>Team obligations</h5>
+    The ASA Stats <a href="{% url 'about' %}#team" title="About page">team</a> takes care of the following:
+    <ul class="collection">
+    <li class="collection-item">
+      <p>Core software and features development in the first two years</p>
+    </li>
+    <li class="collection-item">
+      <p>PR before DAO takes over</p>
+    </li>
+    <li class="collection-item">
+      <p>Project administration in the first two years</p>
+    </li>
+    <li class="collection-item">
+      <p>Bug fixing in the first two years</p>
+    </li>
+    <li class="collection-item">
+      <p>Gradually open-sourcing the codebase before DAO takes place</p>
+    </li>
+    </ul>
+    <br>
+  </div>
+  <h3>ASA Stats Token</h3>
+  <div class="col s12">
+    <p>ASA Stats Token is a utility token created with the following immutable properties:<br>
+    <br>
+    Name: <a href="https://algoexplorer.io/asset/393537671" target="_blank" rel="noopener" title="Visit ASASTATS AlgoExplorer page">ASA Stats Token</a><br>
+    ID: 393537671<br>
+    Unit name: ASASTATS<br>
+    Total supply: 1,000,000,000<br>
+    Decimals: 6<br>
+    URL: <a href="https://www.asastats.com" target="_blank" rel="noopener" title="Token URL field">https://www.asastats.com</a><br>
+    <br>
+    Clawback and freeze addresses are not set.
+    </p>
+    <br>
+  </div>
+  <h3>Token allocation</h3>
+   <div class="col s12">
+    <ul class="collection">
+      <li class="collection-item">
+      <h5>1) Development Pool (20%)</h5>
+      <br>A total of 200,000,000 ASASTATS will be allocated to this pool for the purpose of funding the development of ASA Stats in the pre-DAO phase. The funds from this pool will be used for the Team members' salaries and for other development costs during the pre-DAO phase.<br>
+      </p>
+      <br>
+      </li>
+      <li class="collection-item">
+      <h5>2) Administration and Costs (12%)</h5>
+      <p>A total of 120,000,000 ASASTATS will be allocated to this pool for the establishment and administration of the legal entity behind ASA Stats, for purchasing and other costs for ASA Stats servers, for marketing expenses, for sponsoring community events, for outsourcing costs, for partnerships expenses, and for other expenses that will emerge during the pre-DAO phase.<br>
+      </p>
+      <br>
+      </li>
+      <li class="collection-item">
+      <h5>3) Team Rewards (12%)</h5>
+      <p>A total of 120,000,000 ASASTATS in 24 monthly batches of 5,000,000 ASASTATS will be allocated to the team members. If the Team succeeds in transferring all responsibilities to DAO in a period shorter than 2 years, that fact won't change the influx of their rewards.<br>
+      </p>
+      <br>
+      </li>
+      <li class="collection-item">
+      <h5>4) Community Rewards (15%)</h5>
+      <p>A total of 150,000,000 ASASTATS will be allocated to the community members for the purpose of rewarding their contribution to the ASA Stats project, as well as for other activities in the official channels and elsewhere. Such activities include channels administration, participation in games and lotteries, creation of NFTs, etc.<br>
+      </p>
+      <br>
+      </li>
+      <li class="collection-item">
+      <h5>5) Airdrops (8%)</h5>
+      <p>A total of 80,000,000 ASASTATS will be allocated for the users and community members, as well as to the potential users and community members. The funds from this pool will be used for rewarding contributions or other activities that are not easily measurable – if they are measurable then pool 4 should be used instead.<br>
+      </p>
+      <br>
+      </li>
+      <li class="collection-item">
+      <h5>6) Giveaways (2%)</h5>
+      <p>A total of 20,000,000 ASASTATS will be allocated for the purpose of attracting potential users. The main distinction and difference between this pool and pool 5 are in the rewarding process: while the airdrops are planned and scheduled, as well as always conducted directly from the related pool, a giveaway can be conducted by any trusted community member, and even by using that member as a proxy (this means that a community member may send a giveaway from their account and ask for compensation from this pool afterward).<br>
+      </p>
+      </li>
+      <li class="collection-item">
+      <h5>7) DAO (the rest of the supply)</h5>
+      <p>Any token from pools 1, 2, 5, and 6 that has not been spent in the pre-DAO phase will be transferred to this pool upon the establishment of the ASA Stats DAO. The further allocation and purpose of those funds is in the scope of „ASA Stats DAO Whitepaper”.<br>
+      </p>
+      <br>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
+{% block otherfooter %}<script type="application/ld+json">{% include "jsonld/tokenomics.jsonld" %}</script>{% endblock %}
