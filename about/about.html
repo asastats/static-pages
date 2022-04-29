@@ -1,59 +1,132 @@
 {% extends 'base.html' %}{% load static %}
 {% block title %}ASA Stats - About page{% endblock %}
-{% block description %}Presenting ASA Stats concepts, as well as the goals project aims to achieve lead by development team and DAO. {% endblock %}
-{% block keywords %}asastats,Algorand,ASA,NFT,concept,goals,author,team,DAO{% endblock %}
+{% block description %}Presenting ASA Stats mission, as well as the goals project aims to achieve lead by development team and DAO.{% endblock %}
+{% block keywords %}asastats,Algorand,ASA,NFT,mission,goals,values,beliefs,people,team,DAO{% endblock %}
 {% block content %}
 <h1 class="center-align">About</h1>
 <div class="row left-align">
-  <h3>Concept</h3>
+  <h3 id="mission">Mission</h3>
   <div class="col s12">
-    <p>The main purpose of ASA Stats is to evaluate and present the current balance in Algos for any address on the Algorand blockchain. Such a balance is calculated by adding the existing ALGO balance and the estimated sum of values of all the ASAs account holds.<br>
-    <br>
-    The final phase of development for the inclusion of accounts' NFT values is expected to take place after the <a href="https://www.eventbrite.com/e/decipher-tickets-170181821409" target="_blank" rel="noopener" title="DeCipher event tickets">Decipher event</a>. That would probably coincide with the finished ASA Stats Token <a href="{% url 'tokenomics' %}"> presale phase</a>.<br>
-    <br>
-    In this first phase, users have to refresh an address page in order to receive the latest data. Real-time account tracking development is expected to take place either during or after the implementation of the NFT evaluation functionality.<br>
-    <br>
-    An automatic throttling/rate-limiting development will take place afterward, as one of the requirements for both business use and adoption of ASASTATS utility token.<br>
+    <p>The mission of ASA Stats is to become the primary <a href="https://www.sciencedirect.com/science/article/pii/S0304405X17301344" target="_blank" rel="noopener" title="Read article 'The source of information in prices and investment-price sensitivity'">source of price information</a> for every ASA on the Algorand blockchain.<br>
     <br></p>
   </div>
+
   <h3 id="goals">Goals</h3>
   <div class="col s12">
-    <p>The primary goal is to provide a great user experience. If that can be achieved, then establishment of project's DAO would become the very next primary goal.<br>
-    <br>
-    ASA Stats aims to have price information on every ASA and NFT that has ever been sold.<br>
-    <br>
-    For those that have never been sold, the price evaluation algorithms would be developed and if possible an informative price will be presented to the user together with the reasoning for such evaluation.<br>
-    <br>
-    ASA Stats will implement every publicly available SDK (preferably <a href="https://www.python.org/" target="_blank" rel="noopener" title="Python programming language website">Python</a>) of all major DEX solutions on the Algorand blockchain as soon as such SDK is available. Also, ASA Stats author (and ideally <a href="#involve">the team</a> too) will actively contribute to those SDK codebases during the pre-DAO ASA Stats phase. As of February 2022, <a href="https://www.tinyman.org" target="_blank" rel="noopener" title="Go to Tinyman website">Tinyman AMM</a>, respectively related <a href="https://github.com/tinymanorg/tinyman-py-sdk" target="_blank" rel="noopener" title="Tinyman Python SDK repository">py-tinyman-sdk</a> represents the only available SDK for any AMM/DEX on Algorand Mainnet.
+    <h4>ASA & NFT Valuation</h4>
+    <ul class="collection">
+      <li class="collection-item">
+        <strong>SDK Implementation:</strong>&nbsp;Implement publicly available SDKs of all major DEX or AMM, as well as from any NFT marketplace on the Algorand blockchain.
+      </li>
+      <li class="collection-item">
+        <strong>Selling Price Optimization:</strong>&nbsp;Bring maximum value for user's asset by calculating the optimal amounts that should be sold on each of the AMMs or DEXes to the users.
+      </li>
+      <li class="collection-item">
+        <strong>Pricing Algorithms:</strong>&nbsp;NFTs that have never been sold, price evaluation algorithms will be developed so that an estimated price can be presented to the user along with the reasoning behind that price.
+      </li>
+    </ul>
+    <h4>ASA Stats API and Feature-Driven Development</h4>
+    <p>ASA Stats will be encouraging partnerships and sponsoring developers once our API is ready.
+    <br></p>
+    <ul class="collection">
+      <li class="collection-item">
+        Create databases and provide aggregate data back to our users, as well as other bidirectional data streaming
+      </li>
+      <li class="collection-item">
+        Develop ready-to-use software tools for Service providers and software companies
+      </li>
+      <li class="collection-item">
+        Create advanced web widgets for use in the portfolio view
+      </li>
+    </ul>
+    <p>Please refer to <a href="https://github.com/asastats/channel/wiki/Goals" target="_blank" rel="noopener" title="Read the ASA Stats Goals document">Goals</a> and <a href="https://github.com/asastats/docs/blob/main/roadmap.md" target="_blank" rel="noopener" title="Read the ASA Stats Roadmap document">Roadmap</a> documents for more details.
+    <br></p>
+   </div>
+
+   <h3 id="value">Value Proposition</h3>
    <div class="col s12">
-    <div class="card horizontal white">
-    <div class="card-stacked">
-    <div class="card-content">
-        <p id="involve">It is planned that the next section name changes from "<strong>Author</strong>", over "<strong>Team</strong>", to final "<strong>DAO</strong>".<br>
-        <br>
-        If you wish to be involved, please subscribe to the <a href="https://www.reddit.com/r/asastats" target="_blank" rel="noopener" title="Go to r/asastats subreddit">ASA Stats subreddit</a>,
-        send a direct message to <a href="https://twitter.com/messages/compose?recipient_id=1455926934777565184" target="_blank" rel="noopener" title="send DM on Twitter">@asastatscom on Twitter</a>,
-        or check out #tasks channel in our <a href="https://discord.gg/Vjx7w7pAC7" target="_blank" rel="noopener" title="ASA Stats Discord server invite">Discord server</a>.
-        <br>
-        </p>
+     <h4>Portfolio Tracker</h4>
+     <p>ASA Stats evaluate and present the current balance for any wallet address on the Algorand blockchain.
+     <br></p>
+     <div class="video-container">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/M8_dWMNWmCo" frameborder="0" allowfullscreen></iframe>
+     </div>
+     <h4>Utility Token</h4>
+     <p>ASA Stats Token (ID: <a href="https://algoexplorer.io/asset/393537671" target="_blank" rel="noopener" title="Go to AlgoExplorer">393537671</a>) is a utility token meant to be used for purchasing various professional services from ASA Stats.
+     <br></p>
+   </div>
+
+   <h3 id="target">Target Groups</h3>
+   <div class="col s12">
+    <ul class="collection">
+      <li class="collection-item">
+        Professional traders and Advanced ASA Stats users
+      </li>
+      <li class="collection-item">
+        Developers and Software companies
+      </li>
+    </ul>
+    <p>ASA Stats will continue to provide free services for average, non-professional use.
+    <br></p>
+   </div>
+
+   <h3 id="beliefs">Values and Beliefs</h3>
+   <div class="col s12">
+     <h4>Transparency and Decentralisation</h4>
+     <ul class="collection">
+       <li class="collection-item">
+        Every decision regarding the development of ASA Stats is <a href="https://github.com/asastats/channel/wiki/Discussions" target="_blank" rel="noopener" title="Go to the ASA Stats discussions wiki page">discussed</a> with the community.
+       </li>
+       <li class="collection-item">
+        One of the primary goals and a measure of success for ASA Stats project is the establishment of decentralized autonomous organization (DAO) that will take over after the initial phase of the project is successfully completed and all the points from the <a href="https://github.com/asastats/docs/blob/main/roadmap.md" target="_blank" rel="noopener" title="Read the ASA Stats roadmap">roadmap</a> are resolved.
+       </li>
+     </ul>
+     <h4>User-Centric Approach</h4>
+     <p>ASA Stats is committed to provide the best user experience.
+     <br></p>
+     <ul class="collection">
+       <li class="collection-item">
+        We welcome feature requests, bug reports, and update requests in our <a href="https://github.com/asastats/channel/issues" target="_blank" rel="noopener" title="Visit ASA Stats Issue Tracker">Channel issues</a>.
+       </li>
+       <li class="collection-item">
+        The ASA Stats <a href="https://discord.gg/Vjx7w7pAC7" target="_blank" rel="noopener" title="Go to ASA Stats Discord">Discord server</a>, <a href="https://www.reddit.com/r/asastats/" target="_blank" rel="noopener" title="Go to r/asastats">subreddit</a>, and <a href="https://twitter.com/asastatscom" target="_blank" rel="noopener" title="Go to ASA Stats Twitter">Twitter</a> are Community's channels. Welcome on board.
+       </li>
     </div>
-    </div>
-    </div>
-    <br>
-</div>
-  </div>
-  <h3 id="team">Author</h3>
-  <div class="col s12">
-    <p>The core developer and website administrator of ASA Stats is Ivica Paleka.<br>
-    <br>
-    Ivica Paleka;&nbsp;Zadar, Croatia, EU;&nbsp;ipaleka (at) hopemeet.me;&nbsp;<a href="https://github.com/ipaleka" target="_blank" rel="noopener" title="Go to Ivica Paleka's Github page">GitHub</a>;&nbsp;<a href="https://stackoverflow.com/users/11703358/ipaleka" target="_blank" rel="noopener" title="Go to Ivica Paleka's StackOverflow page">Stack Overflow</a><br>
-    <br>
-    Various steps should be taken in order to achieve the goal of establishing a DAO. Some of those steps - like emphasizing an individual - at first glance may look like moving in the opposite direction. However, adding the following text to this page represents an act of transparency and it's just an honest step in everlasting focus at preventing a red-flag raising on ASA Stats:<br>
-    <br>
-    <em>Ivica started with professional programming during university by creating desktop software for financial and inventory accounting. In the years that followed, he designed and created various desktop software for multiple purposes and clients. He specialized in accounting software for a wide variety of businesses, including cafes, bars, shops and exchange offices, as well as bus and boat traveling tickets systems. His first web programming projects in 2000 coincided with his first time working in a team. He was hired by an IT company for the job of designing and developing applications in ASP/VBScript.<br>
-    After a few years, Ivica completely switched to Python and since then has developed desktop software with related Python wrappers for GTK, Qt, wxWindows/wxWidgets, and Tkinter, and has developed web applications in Django. Recently, Ivica has been focused on mastering new technologies, like unit and functional testing, NoSQL, continuous management and deployment, GNU/Linux system administration, system security, etc. Since changing his development process to test-driven development, Ivica has developed and released a long-planned project, the <a href="https://hopemeet.me" target="_blank" rel="noopener" title="Visit Hopemeet match engine">Hopemeet match engine</a>, and have developed <a href="https://github.com/ipaleka/arrangeit" target="_blank" rel="noopener" title="arrangeit Github repository">arrangeit</a> - the open-source and cross-platform successor of his own shareware created in the Nineties.<br>
-    For the last year Ivica has familiarized himself with the Algorand blockchain. He created and now maintains <a href="https://github.com/ipaleka/algorand-provisioning" target="_blank" rel="noopener" title="Visit GitHub repo">the repository</a> with an Ansible script for provisioning the Algorand Node on all the popular contemporary operating systems. He has been an active community member in official Algorand channels such as theAlgorand Discord, GitHub, forum, and subreddit, as well as being involved in creating publications and related public code repositories for the Algorand developer portal (<a href="https://developer.algorand.org/solutions/getting-started-with-python-algorand-sdk-and-django/" target="_blank" rel="noopener" title="Visit Algodjango solution on Algorand developer portal">Getting started with Python Algorand SDK and Django</a> and <a href="https://developer.algorand.org/tutorials/create-and-test-smart-contracts-using-python/" target="_blank" rel="noopener" title="Visit Python testing tutorial on Algorand developer portal">Create and test smart contracts using Python</a>)</em>.
-  </div>
+
+    <h3 id="people">The People behind ASA Stats</h3>
+    <div class="col s12">
+      <h4>Team</h4>
+      <p>Ivica Paleka; Zadar, Croatia, EU; ipaleka (at) asastats.com; <a href="https://github.com/ipaleka" target="_blank" rel="noopener" title="Go to Ivica Paleka's GitHub profile page">GitHub</a>; <a href="https://stackoverflow.com/users/11703358/ipaleka" target="_blank" rel="noopener" title="Go to Ivica Paleka's Stack Overflow profile page">Stack Overflow</a> is the founder and right now the only member of ASA Stats Team. Team is founded just to secure meaningful governance by developing the ASA Stats software until a decentralized voting platform is deployed on Algorand Mainnet.
+      <br></p>
+      <ul class="collection">
+        <li class="collection-item">
+          Senior software designer and developer (25+ years); Python, Debian/Ubuntu; Django, PostgreSQL; NoSQL, nginx, Ansible; desktop applications, web backend and frontend
+        </li>
+        <li class="collection-item">
+          Specialized in accounting software for a wide variety of businesses, including cafes, bars, shops and exchange offices, as well as bus and boat traveling tickets systems. 
+        </li>
+        <li class="collection-item">
+          Algorand blockchain contributions
+          <ul class="collection">
+            <li class="collection-item">
+              Created and now maintains <a href="https://github.com/ipaleka/algorand-provisioning" target="_blank" rel="noopener" title="Visit GitHub repository page">the repository</a> with an Ansible script for provisioning the Algorand Node on all the popular contemporary operating systems.
+            </li>
+            <li class="collection-item">
+              Being involved in creating publications and related public code repositories for the Algorand developer portal (<a href="https://developer.algorand.org/solutions/getting-started-with-python-algorand-sdk-and-django/" target="_blank" rel="noopener" title="Read the article on Algorand Developer portal">Getting started with Python Algorand SDK and Django</a> and <a href="https://developer.algorand.org/tutorials/create-and-test-smart-contracts-using-python/" target="_blank" rel="noopener" title="Read the article on Algorand Developer portal">Create and test smart contracts using Python</a>).
+            </li>
+            <li class="collection-item">
+              An active community member in official Algorand channels such as the Algorand Discord, GitHub, forum, and subreddit.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h4>DAO Governors</h4>
+      <p>The actual owners of this project are 50 (as on April 2022.) governors selected by the project founder in front of the Team.
+      <br></p>
+      <h4>ASA Stats Community</h4>
+      <p>It is expected that the ASA Stats community becomes more involved in the future governor seat updates.
+      <br></p>
+     </div>
 </div>
 {% endblock %}
 {% block otherfooter %}<script type="application/ld+json">{% include "jsonld/about.jsonld" %}</script>{% endblock %}
