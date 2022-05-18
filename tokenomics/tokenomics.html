@@ -1,7 +1,7 @@
 {% extends 'base.html' %}{% load static %}
 {% block title %}ASA Stats - Token metrics page{% endblock %}
 {% block description %}ASA Stats Token (ASASTATS) metrics page - download the ASA Stats Whitepaper and buy ASASTATS on Tinyman.{% endblock %}
-{% block keywords %}asastats,Algorand,ASA,ASASTATS,ASA Stats Token,token,token metrics,tokenomics,DAO,buy,how to buy{% endblock %}
+{% block keywords %}asastats,Algorand,ASA,ASASTATS,ASA Stats Token,token,token metrics,tokenomics,DAO,buy,how to buy,staking{% endblock %}
 {% block content %}
 <div class="row left-align">
 <h1 class="center-align">Tokenomics</h1>
@@ -22,14 +22,30 @@
       <div class="card white">
         <div class="card-content">
           <span class="card-title">Buy ASA Stats Token</span>
-          <p>You will need to opt-in for ASA Stats Token (ASASTATS; ID 393537671) before purchasing it on Tinyman. You can search by name (ASA Stats Token), code (ASASTATS), or ID (393537671).<br>
+          <p>You will need to opt-in for ASA Stats Token (ASASTATS; ID 393537671) before purchasing it. You can search by name (ASA Stats Token), code (ASASTATS), or ID (393537671).<br>
           <br>
-          Current price (Tinyman): {{ price|floatformat:"-6g" }} ASASTATS for 1 ALGO
+          Current price: {{ price|floatformat:"-6g" }} ASASTATS for 1 ALGO
           </p><br>
-          <a class="mylight-text" href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=393537671" target="_blank" rel="noopener" title="Buy ASA Stats Token on Tinyman">Tinyman</a>&nbsp;&nbsp;&nbsp;
-          <a class="mylight-text" href="https://app.algodex.com/trade/393537671" target="_blank" rel="noopener" title="Buy ASA Stats Token on Algodex">Algodex</a>&nbsp;&nbsp;&nbsp;
-          <a class="mylight-text" href="https://www.reddit.com/r/asastats/comments/rdcx6s/how_to_buy_asa_stats_token_asastats_393537671/" target="_blank" rel="noopener" title="Visit page How To Buy ASA Stats Token (ASASTATS #393537671)">How To Buy</a>&nbsp;&nbsp;&nbsp;
-          <a class="mylight-text" href="https://about.algodex.com/docs/algodex-trading-guide-mainnet/" target="_blank" rel="noopener" title="Go to Algodex trading guide page">Algodex trading guide</a>
+          <div class="row">
+            <div class="col m3 s6"><div class="col s6"><a class="mylight-text" href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=393537671" target="_blank" rel="noopener" title="Buy ASA Stats Token on Tinyman">Tinyman</a></div>&nbsp;&nbsp;&nbsp;<div class="col s6"><a class="mylight-text" href="https://old.reddit.com/r/asastats/comments/rdcx6s/how_to_buy_asa_stats_token_asastats_393537671/" target="_blank" rel="noopener" title="Read How To Buy ASASTATS Reddit post">How To Buy</a></div></div>
+            <div class="col m3 s6"><div class="col s6"><a class="mylight-text" href="https://app.algodex.com/trade/393537671" target="_blank" rel="noopener" title="Buy ASA Stats Token on Algodex">Algodex</a></div>&nbsp;&nbsp;&nbsp;<div class="col s6"><a class="mylight-text" href="https://about.algodex.com/docs/algodex-trading-guide-mainnet/" target="_blank" rel="noopener" title="Go to Algodex trading guide page">Trading guide</a></div></div>
+            <div class="col m3 s6"><div class="col s6"><a class="mylight-text" href="https://app.algofi.org/swap" target="_blank" rel="noopener" title="Buy ASA Stats Token on Algofi">Algofi</a></div>&nbsp;&nbsp;&nbsp;<div class="col s6"><a class="mylight-text" href="https://docs.algofi.org/algofi-dex/tutorial/swapping-assets" target="_blank" rel="noopener" title="Visit Swapping Assets on Algofi page">Swapping Assets</a></div></div>
+            <div class="col m3 s6"><div class="col s6"><a class="mylight-text" href="https://app.pact.fi/swap?pair=ALGO0/ASA+STATS+TOKEN393537671(30)" target="_blank" rel="noopener" title="Buy ASA Stats Token on Pact">Pact</a></div>&nbsp;&nbsp;&nbsp;<div class="col s6"><a class="mylight-text" href="https://docs.pact.fi/pact/how-to/swaps" target="_blank" rel="noopener" title="Visit Swap documentation page on Pact">Swap</a></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s12">
+      <div class="card white">
+        <div class="card-content">
+          <span class="card-title">Stake ASA Stats Token</span>
+          <p>Yieldly's ASA Stats Token staking programs are going to be deployed on Thursday, May 19th.<br>
+          </p><br>
+          <div class="row">
+            <div class="col m3 s12"><a class="mylight-text" href="https://app.yieldly.finance/pools" target="_blank" rel="noopener" title="Stake YLDY and claim ASASTATS on Yieldly">Staking pool</a></div>
+            <div class="col m3 s12"><a class="mylight-text" href="https://app.yieldly.finance/liquidity-pools" target="_blank" rel="noopener" title="Stake Tinyman's ASASTATS-YLDY LP token on Yieldly">Liquidity staking pool</a></div>
+            <div class="col m3 s12"><a class="mylight-text" href="https://app.yieldly.finance/distribution" target="_blank" rel="noopener" title="Stake ASASTATS and claim ASASTATS on Yieldly">Distribution pool</a></div>
+          </div>
         </div>
       </div>
     </div>
