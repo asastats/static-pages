@@ -1,203 +1,98 @@
 {% extends 'base.html' %}
 {% block title %}ASA Stats - Features{% endblock %}
-{% block description %}ASA Stats features, DAO governance privileges, ASA Stats API and Feature-Driven Development.{% endblock %}
+{% block description %}Tools for Tracking, Evaluating, and Acting on Your Algorand Portfolio{% endblock %}
 {% block keywords %}asastats,Algorand,features,data integration,NFT pricing,AI,deep network,bundles,user widgets,feature-driven development,API,governance,DAO,Kubernetes{% endblock %}
 {% block content %}
 <h1 class="center-align">ASA Stats Features</h1>
+<h5 class="center-align">Tools for Tracking, Evaluating, and Acting on Your Algorand Portfolio</h5>
 <div class="row left-align">
-  <h2>Data, Assets and Values</h2>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-integration.png" alt="Integration icon">
-        <h5>Algorand Data Integration</h5>
-        <p>ASA Stats integrates data seamlessly from the Algorand blockchain, prioritising 100% uptime reliability. Minimise reliance on third-party SDKs, utilising providers' SDKs only when necessary for specific functionalities.</p>
-      </div>
-    </div>
+  <p>ASA Stats provides a full-stack solution for ASA and NFT management — from wallet overviews to advanced DeFi analytics and trading tools. Whether you’re a casual user or a professional builder, these features give you real-time visibility and control.
+  <br></p>
+  <h2>Live Features</h2>
+  <p>These features are fully developed and available to all users (some with tiered access):
+  <br></p>
+  <h4 id="tracker">Portfolio Tracker</h4>
+  <div class="col s12">
+    <p>
+    ASASTATS is used for:<br>
+    <br>
+    &#8226; View full ASA & NFT holdings for any <strong>Algorand address</strong><br>
+    &#8226; Track values in <strong>ALGO, USD</strong><br>
+    &#8226; Analyze <strong>wallets, liquidity pools, staked funds</strong>, and more — all in one place<br>
+    <br>
+   </p>
   </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-optimisation.png" alt="Optimization icon">
-        <h5>Selling Price Optimisation</h5>
-        <p>ASA Stats brings the <a href="https://github.com/asastats/channel/discussions/103" target="_blank" rel="noopener" title="Visit maximum value engine announcement page">maximum value engine</a> to users' assets by calculating the <strong>maximum value</strong> of the ASAs held in their wallet(s), as well as the optimal amounts that would be sold on each of the AMMs or DEXes.</p>
-      </div>
-    </div>
+  <h4 id="user-bundles">User Bundles</h4>
+  <div class="col s12">
+    <p>
+    &#8226; Combine multiple addresses (or .algo names) into one <strong>portfolio view</strong><br>
+    &#8226; Create up to 38 bundles (Cluster tier); 3 bundle always available for free users<br>
+    <br>
+   </p>
   </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-nft.png" alt="NFT icon">
-        <h5>NFT Pricing Model</h5>
-        <p>ASA Stats builds a deep learning model to assess NFT prices. The model is continuously updated and refined, derived from a dataset containing millions of records.</p>
-      </div>
-    </div>
+  <h4 id="valuation">Real-Time ASA & NFT Valuation</h4>
+  <div class="col s12">
+    <p>
+    &#8226; Fetch live prices from <strong>DEXs like Tinyman, Pact, and Humble</strong><br>
+    &#8226; Consolidate data from swaps, vaults, and liquidity pools<br>
+    &#8226; <strong>NFT collections auto-aggregated</strong>, with floor and estimated value<br>
+    <br>
+   </p>
   </div>
-</div>
-<div class="row left-align">
-  <h2>User Bundles Functionality</h2>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-bundles.png" alt="User bundles icon">
-        <h5>User Bundles</h5>
-        <p>Create and save bundles of Algorand addresses in the user settings, with the ability to edit and change the addresses in a bundle.</p>
-      </div>
-    </div>
+  <h4 id="api">API v2 Access</h4>
+  <div class="col s12">
+    <p>
+    &#8226; Get programmable access to the same valuation engine used on-site<br>
+    &#8226; Query bundles, addresses, and NFTs via REST API (JSON/XML/YAML)<br>
+    &#8226; Available to <strong>Asastatser+ tiers</strong> and all DAO governors<br>
+    <br>
+   </p>
   </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-addresses.png" alt="Network icon">
-        <h5>Bundled Addresses</h5>
-        <p>Track the current assets value for any wallet address on the Algorand blockchain; up to X number of addresses combined, based on subscription tier or DAO status.</p>
-      </div>
-    </div>
+  <h4 id="csv">CSV Export</h4>
+  <div class="col s12">
+    <p>
+    &#8226; Export transactions by address, wallet group, or bundle<br>
+    &#8226; Filter by asset type, protocol, or value threshold<br>
+    &#8226; Planned tax-compliant CSV formatting under development<br>
+    <br>
+   </p>
   </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-naming.png" alt="Naming icon">
-        <h5>Bundle Naming</h5>
-        <p>Create a custom name for each of your user bundles.</p>
-      </div>
-    </div>
+  <h2>In Beta / Preview Mode</h2>
+  <h4 id="historical">Historical Portfolio Charts</h4>
+  <div class="col s12">
+    <p>    
+    &#8226; Visualize portfolio value over time<br>
+    &#8226; Currently rolling out as <strong>“Historic Data” widget</strong><br>
+    <br>
+   </p>
   </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-url.png" alt="URL icon">
-        <h5>Bundle URL</h5>
-        <p>Get a custom URL for every user bundle. URL access could be private or public based on subscription tier or DAO status.</p>
-      </div>
-    </div>
+  <h4 id="nft-pricing">NFT Pricing Model (AI-assisted)</h4>
+  <div class="col s12">
+    <p>    
+    &#8226; Beta model trained on real market data + metadata rarity<br>
+    &#8226; Continually retrained based on new listing and sale patterns<br>
+    <br>
+   </p>
   </div>
-</div>
-<div class="row left-align">
-  <h2>User Widgets</h2>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-trading.png" alt="Trading icon">
-        <h5>Trading User Widget</h5>
-        <p>Experience unified trading excellence with the ASA Stats trading widget. Users can add any ASA to the trading widget in full or partially to utilise trading functionalities: Buy/sell, stake, remove liquidity.</p>
-      </div>
-    </div>
+  <h4 id="public-bundles">Bundle Sharing (Public URLs)</h4>
+  <div class="col s12">
+    <p>    
+    &#8226; Reserve public URLs for bundles<br>
+    &#8226; Public views display real-time value, allocation, and asset labels<br>
+    &#8226; Part of a future release phase<br>
+    <br>
+   </p>
   </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-publish.png" alt="Publish icon">
-        <h5>Publish ASA Stats User Widgets</h5>
-        <p>Create and publish your own ASA Stat user widget. These have to pass an audit by ASA Stats Team. An external audit may be required too.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-order.png" alt="Order icon">
-        <h5>Order Development of a Widget</h5>
-        <p>ASA Stats will develop or sponsor the development of a user widget that brings functionality not available in the existing set of user widgets. Limited to Cluster tier subscriber's only.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-innovative.png" alt="Innovation icon">
-        <h5>Innovative Features</h5>
-        <p>ASA Stats strives to enhance user experience by incorporating innovative features. A list of <a href="https://github.com/asastats/channel/wiki/FeaturesDependentOnUserWidgets" target="_blank" rel="noopener" title="Visit dependable features wiki page">user widgets</a> desired by ASA Stats community demonstrate an array of possibilities for future development.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row left-align">
-  <h2>ASA Stats API and Feature-Driven Development</h2>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-api.png" alt="API icon">
-        <h5>ASA Stats API Access</h5>
-        <p>Obtain API keys to access ASA Stats API services. Subscribers to Asastatser & Professional tiers get API access with a decreased bandwidth (Rate-Limited). Unlimited access is reserved for Cluster tier.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-endpoints.png" alt="Endpoints icon">
-        <h5>ASA Stats API Endpoints</h5>
-        <p>ASA Stats offers an array of API Endpoints, both; restricted and comprehensive, based on subscription tier.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-develop.png" alt="Development icon">
-        <h5>Develop ASA Stats User Widgets</h5>
-        <p>Leverage ASA Stats API services to develop advanced user widgets for use in the portfolio view.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-own.png" alt="Solutions icon">
-        <h5>Develop Own Software Solutions</h5>
-        <p>Leverage ASA Stats API services to develop ready-to-use software tools for service providers and software companies.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row left-align">
-  <h2>DAO Governors' Privileges</h2>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-seat.png" alt="Seat icon">
-        <h5>Governance Seat</h5>
-        <p>Own a stake in ASA Stats. The governance seat (which lasts forever) is conditional — at least ten months of staking has to pass — while the subscription benefits last for as long as a user stakes ASASTATS.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-votes.png" alt="Vote icon">
-        <h5>Governance Seat Votes</h5>
-        <p>Shape the future of ASA Stats. DAO subscription tiers grant a number of votes defined by the tier.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-upgrade.png" alt="Upgrade icon">
-        <h5>Governor Seat's Votes Upgrade</h5>
-        <p>Increase your voting power & privileges. User's account is automatically upgraded to next tier once ASASTATS staked reaches the minimum amount of next tier. The governance votes update takes place exactly a year after.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-k2s.png" alt="Kubernetes icon">
-        <h5>DAO Kubernetes Node</h5>
-        <p>All the DAO governors will share the resources of the DAO Kubernetes Node, except for Cluster tier subscribers. They get a dedicated Kubernetes node.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col s12 m6 l4">
-    <div class="card medium">
-      <div class="card-content">
-        <img height="90" src="/static/img/features-staking.png" alt="ASA Stats icon">
-        <h5>Governance Staking</h5>
-        <p>Earn ASASTATS. Staking rewards are available on a first-come, first-served basis, while supplies last; early adopters are encouraged to participate. Stake ASASTATS on <a href="https://app.cometa.farm/stake" target="_blank" rel="noopener" title="Visit Cometa staking platform">Cometa</a> and grab your governance seat.</p>
-      </div>
-    </div>
-  </div>
+  <h2>Feature Requests & Community Input</h2>
+  <p>ASA Stats development is <strong>driven by user demand</strong>. Most new features originate from:<br>
+  <br>
+  &#8226; GitHub issues<br>
+  &#8226; Community proposals<br>
+  &#8226; Rewarded contributions (via ASASTATS tokens)<br>
+  <br>
+  Got a feature idea or improvement request? Submit a <a href="https://github.com/asastats/channel/issues" target="_blank" rel="noopener" title="Visit issues section of our GitHub">GitHub Issue</a>.<br>
+  </p>
+  
 </div>
 {% endblock %}
 {% block otherfooter %}<script type="application/ld+json">{% include "jsonld/features.jsonld" %}</script>{% endblock %}

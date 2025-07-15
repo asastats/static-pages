@@ -1,57 +1,93 @@
 {% extends 'base.html' %}{% load static %}
 {% block title %}ASA Stats - Token metrics page{% endblock %}
-{% block description %}ASA Stats Token (ASASTATS) metrics page - download the ASA Stats Whitepaper and buy ASASTATS on Pact.{% endblock %}
+{% block description %}Understanding the Utility, Supply, and Governance Model Behind ASASTATS{% endblock %}
 {% block keywords %}asastats,Algorand,ASA,ASASTATS,ASA Stats Token,token,token metrics,tokenomics,DAO,buy,how to buy,staking{% endblock %}
 {% block content %}
 <div class="row left-align">
 <h1 class="center-align">Tokenomics</h1>
-  <div class="row col s12">
-  <h3>Tokenomics Overview</h3>
-  <div class="col s12">
-    <p>ASA Stats Token is a utility token used for accessing ASA Stats professional services, governance and staking.<br>
-    <br>
-    Target groups are advanced users of ASA Stats portfolio tracker, investors and DAO governors, developers and software companies. Please refer to the “Utility and Use Cases” section below for more details.<br>
-    <br>
-    ASA Stats secured enough funds in the initial token presale for the development and deployment of all the roadmap's sections. There are enough funds under the Team's control in order to reach the DAO phase. Please refer to <a href="https://www.asastats.com/whitepaper.pdf" target="_blank" rel="noopener" title="Download ASA Stats whitepaper">Whitepaper</a> and <a href="https://github.com/asastats/docs/blob/main/roadmap.md" target="_blank" rel="noopener" title="Go to GitHub Roadmap">Roadmap</a> documents for more details.<br>
-    <br>
-    ASA Stats secured two grants from the Algorand Foundation in the <a href="https://medium.com/@asastats/asa-stats-secured-two-grants-from-the-algorand-foundation-in-the-xgov-voting-session-2-5938d9e2f410" target="_blank" rel="noopener" title="Read Medium article">xGov Voting Session 2</a>, providing building blocks for ASA Stats as the primary source of price information for every ASA on the Algorand blockchain.<br>
-    <br>
+<h5 class="center-align">Understanding the Utility, Supply, and Governance Model Behind ASASTATS</h5>
+<h3 id="overview">Token Overview</h3>
+<div class="col s12">
+  <p>
+  &#8226; <strong>Token Name</strong>: ASASTATS<br>
+  &#8226; <strong>Asset ID</strong>: 393537671<br>
+  &#8226; <strong>Total Supply</strong>: 1,000,000,000 (fixed, non-mintable)<br>
+  &#8226; <strong>Decimals</strong>: 6<br>
+  &#8226; <strong>Immutable</strong>: No freeze or clawback functions<br>
+  <br>
+  ASASTATS is the utility token that powers the ASA Stats platform. It enables access to premium services, participation in governance, and serves as a mechanism to reward contributors, developers, and liquidity providers.
   </p>
+  <br>
+</div>
+<h3 id="utility">Token Utility</h3>
+<div class="col s12">
+  <p>
+  ASASTATS is used for:<br>
+  <br>
+  &#8226; <strong>Subscription payments</strong> to unlock premium features and tools<br>
+  &#8226; <strong>DAO governance access</strong> (staking-based, now closed)<br>
+  &#8226; <strong>Developer access</strong> to advanced API endpoints and publishing widgets<br>
+  &#8226; <strong>Reward distribution</strong> for bug bounties, feature suggestions, and community initiatives<br>
+  &#8226; <strong>Liquidity incentives</strong> for ASASTATS trading pairs<br>
+  <br>
+  </p>
+  <br>
+</div>
+<h3 id="distribution">Supply Distribution</h3>
+<div class="col s12">
+  <p>
+  The token was distributed with transparency and long-term alignment in mind:<br>
+  </p>
+  <br>
+  <table>
+    <thead>
+      <tr>
+          <th>Allocation</th>
+          <th>Amount</th>
+          <th>Purpose</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Development Pool</td>
+        <td>20% (200M)</td>
+        <td>Fund ongoing feature rollouts and infrastructure scaling</td>
+      </tr>
+      <tr>
+        <td>Administration/Legal</td>
+        <td>12% (120M)</td>
+        <td>Pre-DAO entity setup and operational costs</td>
+      </tr>
+      <tr>
+        <td>Team Allocation</td>
+        <td>12% (120M)</td>
+        <td>Fully vested in 24 tranches, now complete</td>
+      </tr>
+      <tr>
+        <td>Community Rewards</td>
+        <td>15% (150M)</td>
+        <td>Reward GitHub contributions, bug reports, and DAO discussion support</td>
+      </tr>
+      <tr>
+        <td>Airdrops</td>
+        <td>8% (80M)</td>
+        <td>Growth campaigns, early user incentives</td>
+      </tr>
+      <tr>
+        <td>Giveaways</td>
+        <td>2% (20M)</td>
+        <td>Developer grants, contests, awareness efforts</td>
+      </tr>
+      <tr>
+        <td>DAO Treasury (residual)</td>
+        <td>TBD</td>
+        <td>Unspent pools flow into the DAO treasury post-launch</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
   </div>
-  <h3>Token Supply and Distribution</h3>
-  <h4>ASA Stats Token</h4>
-  <div class="col s12">
-    <p>ASA Stats Token is created with the following immutable properties:<br>
-    <br>
-    Name: <a href="https://allo.info/asset/393537671" target="_blank" rel="noopener" title="Visit ASASTATS Allo page">ASA Stats Token</a><br>
-    ID: 393537671<br>
-    Unit name: ASASTATS<br>
-    Total supply: 1,000,000,000<br>
-    Decimals: 6<br>
-    URL: <a href="https://www.asastats.com" target="_blank" rel="noopener" title="Token URL field">https://www.asastats.com</a><br>
-    <br>
-    Clawback and freeze addresses are not set.
-    </p>
-    <br>
-  </div>
-  <h4>Token allocation</h4>
-   <div class="col s12">
-      <p>
-      <strong>1) Development Pool (20%): </strong>A total of 200,000,000 ASASTATS has been allocated for funding the development of ASA Stats in the pre-DAO phase.<br>
-      <strong>2) Administration and Costs (12%): </strong>A total of 120,000,000 ASASTATS has been allocated for the establishment and administration of the legal entity behind ASA Stats during the pre-DAO phase.<br>
-      <strong>3) Team Rewards (12%): </strong>A total of 120,000,000 ASASTATS has been allocated for Team rewards. ASA Stats Team received their full rewards, in 24 monthly batches of 5,000,000 ASASTATS since inception.<br>
-      <strong>4) Community Rewards (15%): </strong>A total of 150,000,000 ASASTATS has been allocated to the community members for rewarding their contribution to the ASA Stats project. Such activities include channel administration, feature requests and bug reports.<br>
-      <strong>5) Airdrops (8%): </strong>A total of 80,000,000 ASASTATS has been allocated for rewarding community contributions or other activities that are not easily measurable – if they are measurable then pool 4 is used instead.<br>
-      <strong>6) Giveaways (2%): </strong>A total of 20,000,000 ASASTATS has been allocated for ecosystem development, attracting potential users.<br>
-      <strong>7) DAO Treasury: </strong> The rest of the supply. ASASTATS tokens from pools 1, 2, 5, and 6 that have not been spent in the pre-DAO phase will be transferred to this pool upon the establishment of the ASA Stats DAO.<br>
-      </p>
-      <p>The term “allocation” refers both to tokens that are actually allocated to a pool-specific wallet, as well as tokens that are defined as a percentage but not already transferred to the related wallet.<br>
-      </p>
-      <p>ASASTATS received by charging for professional services will be reallocated to the pools defined. A prioritization in reallocating will take place based on the pools' current needs and their states related to initial allocation.<br>
-      </p>
-      <br>
-  </div>
-  <h4 id="reports">ASA Stats Transparency Reports</h4>
+  <h3 id="reports">ASA Stats Transparency Reports</h3>
   <div class="col s12">
     <p>Every transfer in and out of any pool in the pre-DAO phase is conducted by the Team and listed in the Team's monthly financial/transparency reports.<br>
     <br>
@@ -62,56 +98,7 @@
     <a href="/transparency-report-2022-12.pdf" target="_blank" title="Download ASA Stats Transparency Report for December 2022">12/22</a> | <a href="/transparency-report-2022-11.pdf" target="_blank" title="Download ASA Stats Transparency Report for November 2022">11/22</a> | <a href="/transparency-report-2022-10.pdf" target="_blank" title="Download ASA Stats Transparency Report for October 2022">10/22</a> | <a href="/transparency-report-2022-09.pdf" target="_blank" title="Download ASA Stats Transparency Report for September 2022">09/22</a> | <a href="/transparency-report-2022-08.pdf" target="_blank" title="Download ASA Stats Transparency Report for August 2022">08/22</a> | <a href="/transparency-report-2022-07.pdf" target="_blank" title="Download ASA Stats Transparency Report for July 2022">07/22</a> | <a href="/transparency-report-2022-06.pdf" target="_blank" title="Download ASA Stats Transparency Report for June 2022">06/22</a> | <a href="/transparency-report-2022-05.pdf" target="_blank" title="Download ASA Stats Transparency Report for May 2022">05/22</a> | <a href="/transparency-report-2022-04.pdf" target="_blank" title="Download ASA Stats Transparency Report for April 2022">04/22</a> | <a href="/transparency-report-2022-03.pdf" target="_blank" title="Download ASA Stats Transparency Report for March 2022">03/22</a> | <a href="/transparency-report-2022-02.pdf" target="_blank" title="Download ASA Stats Transparency Report for February 2022">02/22</a> | <a href="/transparency-report-2022-01.pdf" target="_blank" title="Download ASA Stats Transparency Report for January 2022">01/22</a><br>
     <a href="/transparency-report-2021-12.pdf" target="_blank" title="Download ASA Stats Transparency Report for December 2021">12/21</a> | <a href="/transparency-report-2021-11.pdf" target="_blank" title="Download ASA Stats Transparency Report for November 2021">11/21</a><br>
     <br>
-  </p>
-  </div>
-  <h3>Utility and Use Cases</h3>
-  <h4>ASA Stats Professional Services</h4>
-  <div class="col s12">
-    <p>&#8226; Access ASA Stats Portfolio Tracker advanced features and functionalities.<br>
-      &#8226; Leverage ASA Stats API services and feature-driven development.<br>
-    <br>
-     Optimize your experience with ASA Stats <a href="https://www.asastats.com/features/" target="_blank" rel="noopener" title="Visit Features page">features</a> by choosing the <a href="https://www.asastats.com/subscriptions/" target="_blank" rel="noopener" title="Visit subscriptions page">subscription tier</a> that aligns with your preferences.
     </p>
-    <br>
-  </div>
-  <h4>Governance and Voting</h4>
-  <div class="col s12">
-    <p>&#8226; Own a stake in ASA Stats by becoming a DAO governor.<br>
-      &#8226; Increase your voting power & privileges.<br>
-    <br>
-    Refer to the “Investors and DAO Governors” section in the <a href="{% url 'faq' %}">FAQ page</a> for more details.
-    </p>
-  </div>
-  <h4>Staking and Rewards</h4>
-  <div class="col s12">
-    <p>&#8226; Access to ASA Stats services <strong>without the need to pay future fees</strong>; a privilege for ASA Stats DAO governors.<br>
-    &#8226; Earn ASASTATS staking rewards on <a href="https://app.cometa.farm/stake" target="_blank" rel="noopener" title="Visit Cometa platform">Cometa</a>. Read <a href="https://metalabs.gitbook.io/cometa/yield-farming/video-walktrough" target="_blank" rel="noopener" title="Visit Cometa dopcumentation web">How to Stake on Cometa</a> (Cometa Documentation). Future staking rewards would be limited to DAO subscribers and available on a first-come, first-served basis, while supplies last.<br>
-    &#8226; Add liquidity to <a href="https://app.pact.fi/add-liquidity/2757667443" target="_blank" rel="noopener" title="Visit Pact platform">Pact's ALGO-ASASTATS LP</a> and <a href="https://medium.com/@asastats/asa-stats-liquidity-is-moving-to-pact-2573cd1fb0d6" target="_blank" rel="noopener" title="Read Medium article">earn weekly rewards</a>. Read <a href="https://docs.pact.fi/pact/how-to/pools#how-to-add-and-remove-liquidity" target="_blank" rel="noopener" title="Visit Pact documentation web">How to add liquidity on Pact</a> (Pact Documentation).<br>
-    &#8226; Earn ASASTATS by contributing to the project. Refer to the “Service Users” section in the <a href="{% url 'faq' %}">FAQ page</a> for more details.<br>
-    </p>
-    <br>
-  </div>
-  <h3>Roadmap and Future Developments</h3>
-  <h4>Development Plans</h4>
-  <div class="col s12">
-    <p>&#8226; ASA Stats has achieved numerous milestones. Please refer to the <a href="https://github.com/asastats/docs/blob/main/roadmap.md" target="_blank" rel="noopener" title="Go to GitHub Roadmap">Roadmap</a> document for more details.<br>
-    </p>
-    <br>
-  </div>
-  <h4>Grant-Fueled Advancements on the Horizon</h4>
-  <div class="col s12">
-    <p>The <a href="https://medium.com/@asastats/asa-stats-secured-two-grants-from-the-algorand-foundation-in-the-xgov-voting-session-2-5938d9e2f410" target="_blank" rel="noopener" title="Read Medium article">grants received</a> from the Algorand Foundation will empower ASA Stats to surpass its goals and catalyze innovative strides in the decentralized landscape:<br>
-    <br>
-    &#8226; ASA Stats is directed to provide a tenfold increase in API bandwidth and high availability with an uptime equal to or very close to 100%.<br>
-    &#8226; ASA Stats is developing the ultimate infrastructure for all blockchain users and developers in resolving the tax report requirements.<br>
-    </p>
-    <br>
-  </div>
-  <h4>ASASTATS Utility Evolution</h4>
-  <div class="col s12">
-    <p>ASA Stats strives to enhance user experience by incorporating innovative features. A list of <a href="https://github.com/asastats/channel/wiki/FeaturesDependentOnUserWidgets" target="_blank" rel="noopener" title="Viusit User widgets wiki page">user widgets</a> desired by the ASA Stats community demonstrates an array of possibilities for future development.<br>
-    </p>
-    <br>
   </div>
 </div>
 
