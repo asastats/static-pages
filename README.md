@@ -2,7 +2,7 @@
 
 **This repository is no longer active and has been deprecated.** 
 
-All website code changes, updates, and contributions should now take place in our new frontend repository. Please direct all future pull requests and issues there:
+All website code changes, updates, and contributions should now take place in our new frontend repository. Please direct all future pull requests there:
 
 👉 **[https://github.com/asastats/frontend](https://github.com/asastats/frontend)**
 
